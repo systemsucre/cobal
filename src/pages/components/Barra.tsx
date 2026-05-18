@@ -74,6 +74,11 @@ const Barra: React.FC = () => {
               <p className="text-[#D4AE36] text-[10px] uppercase">INFORMACIONES</p>
             </div>
           </div>
+          <p
+            className="text-slate-300 hover:bg-white/5 hover:text-white p-2 rounded-lg cursor-pointer text-sm flex items-center gap-2.5 transition-all font-mono group"
+            onClick={() => navigate('/')}>
+            INICIO
+          </p>
 
           {links.map((prod, index) => (
             <li
@@ -84,7 +89,7 @@ const Barra: React.FC = () => {
               <ExternalLink size={14} className="text-slate-500 group-hover:text-[#D4AE36] transition-colors" />
               <div className="flex-1 truncate">
                 <span className="font-semibold">{prod.nombre}</span>
-                <span className="text-[10px] text-slate-500 ml-2">v{prod.version}</span>
+                <span className="text-[10px] text-slate-500 ml-2">{prod.label}</span>
               </div>
             </li>
           ))}

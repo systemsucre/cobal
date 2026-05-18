@@ -25,7 +25,7 @@ const AboutUs: React.FC = () => {
         <div className="bg-black/60 p-3 flex justify-between items-center px-6 border-b border-white/5 select-none">
           <span className="text-[11px] text-[#D4AE36] font-bold uppercase tracking-widest flex items-center gap-2">
             <span className="w-2 rounded-full bg-[#D4AE36] animate-ping" style={{ width: '8px', height: '8px' }}></span>
-            COBAL SYSTEM OS
+            COBAL
           </span>
           <button
             onClick={() => navigate(-1)}
